@@ -1,0 +1,17 @@
+<!DOCTYPE html> <!--これは「このファイルはHTML5で書かれていますよ」とブラウザに伝える宣言。必ずHTMLの一番最初に書く。-->
+<html> <!--ページ全体を囲むタグ。「ここからここまでがHTMLの内容ですよ」という印のようなもの。-->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}"> 
+<!--これはCSSファイルを読み込む記述。
+rel="stylesheet" → このファイルはスタイルシートですと指定。
+href="..." → 読み込むファイルの場所を指定。
+今回の {{ url_for('static', filename='style.css') }} はFlaskの書き方
+Flaskが自動で「staticフォルダの中にあるstyle.css」というファイルの正しいURLを作ってくれます。-->
+<head> <!--ページのヘッダー部分の情報を書くところ。ページのタイトル、文字コード、CSSやJavaScriptを読み込むリンクなどをここに書きます-->
+</head>
+<body> <!--ここが実際にブラウザに表示される内容を書く部分-->
+    <header> <!--ページのヘッダー（上の帯の部分）を表すタグ.<h1> は一番大きな見出し-->
+      <h1>ミニブログをつくってみよう !</h1>
+</header>
+    <p>Let's begin !</p> <!--<p> は段落（paragraph）のタグ.普通の文章や説明文を書くときに使います。-->
+</body>
+</html>
